@@ -4,7 +4,7 @@ import "./CustomButton.css";
 export const CustomButton = ({ label, onClick }) => {
   return (
     <button className="custom-button" onClick={onClick}>
-      {label}
+      <h3>{label}</h3>
     </button>
   );
 };

@@ -3,14 +3,23 @@
   color: white;
   text-align: center;
   padding: 10px;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   left: 0;
   z-index: 100;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 p {
-  color: "white";
+  color: white;
 }
 .social-media-links {
   display: flex;

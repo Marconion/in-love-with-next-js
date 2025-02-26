@@ -20,9 +20,8 @@ h2 {
 p {
   color: #888;
   font-size: 14px;
-
-  margin: 10px 0;
-  padding: 0 30px;
+  margin: 10px 0 20px 0;
+  padding: 0 10px;
   line-height: 1.5;
 }
 
@@ -31,4 +30,5 @@ p {
   height: 200px;
   object-fit: cover;
   border-radius: 1em;
+  margin-bottom: 1em;
 }

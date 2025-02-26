@@ -5,7 +5,14 @@ import Circle_img from "./components/assets/Circle.png";
 import logo from "./components/assets/Logo transparent.png";
 import image1 from "@/app/components/assets/images/img1.jpg";
 import image2 from "@/app/components/assets/images/img2.jpg";
+import video from "../../videos/video.mp4";
+import AppStoreBadge from "@/app/components/assets/images/app-store-badge-128x128.png";
+import GoogleStoreBadge from "@/app/components/assets/images/google-icon.svg";
+
 import { Card } from "./components/Card";
+import { Footer } from "./components/Footer";
+
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -16,7 +23,7 @@ export default function Home() {
       <div>
         <Image src={logo} className="logo" alt="In Love logo" />
       </div>
-      <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div>
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <Image
             style={{
@@ -35,6 +42,8 @@ export default function Home() {
             priority
           />
           <div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
             style={{
               textAlign: "center",
               marginTop: "2rem",
@@ -42,6 +51,30 @@ export default function Home() {
               backgroundColor: "rgba(255, 255, 255, 0.5)",
             }}>
             <p className="read-the-docs">Welcome to My Website!</p>
+            <p className="desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              animi vitae! Eligendi non optio repellendus ad exercitationem, ab
+              reiciendis iure?
+            </p>
+          </div>
+          <div className="video">
+            <video
+              src={video}
+              controls
+              autoFocus
+              loop
+              muted
+              autoPlay
+              style={{ width: "100%", maxWidth: "600px" }}
+            />
+          </div>{" "}
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}>
+            <p className="read-the-docs">Join me on a journey</p>
             <p className="desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               animi vitae! Eligendi non optio repellendus ad exercitationem, ab
@@ -60,8 +93,62 @@ export default function Home() {
             title={`Online Cosmo Meditation`}
             content={`Based on donations. I will guide you through a meditation and it will be in russian language`}
           />
+          <div
+            style={{
+              backgroundColor: "rgb(66, 66, 66)",
+              paddingTop: "2rem",
+              paddingBottom: "2rem",
+            }}>
+            <p className="read-the-docs" style={{ color: "white" }}>
+              Join me on a journey
+            </p>
+            <p className="desc" style={{ color: "rgb(192, 192, 192)" }}>
+              Yoga By Yuliya creates transformative, long lasting and
+              sustainable results.
+            </p>
+          </div>
+          <div>
+            <p className="desc" style={{ color: "black", padding: "2rem" }}>
+              Whether you have 5 or 45 minutes to dedicate that day there is
+              something for everyone to practise anywhere and anytime.
+            </p>
+
+            {/* SIGN UP */}
+            <div
+              style={{
+                alignItems: "center",
+                textAlign: "center",
+                padding: "2rem",
+                backgroundColor: "#be9f8e",
+                borderRadius: "1rem",
+                margin: "2rem",
+              }}>
+              <p className="read-the-docs" style={{ color: "white" }}>
+                Signup to the platform
+              </p>
+              <h3 style={{ color: "white" }}>Monthly 20$ // Yearly 150$</h3>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                gap: "1rem",
+                paddingBottom: "2rem",
+              }}>
+              <Image
+                src={AppStoreBadge}
+                style={{ width: "150px" }}
+                alt="App Store Badge"
+              />
+              <Image
+                src={GoogleStoreBadge}
+                style={{ width: "150px" }}
+                alt="Google Store Badge"
+              />
+            </div>
+          </div>
         </main>
-        <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+        <Footer />
       </div>
     </>
   );
