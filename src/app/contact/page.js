@@ -17,9 +17,9 @@ const Page = () => {
         height: "100vh",
         padding: "0 40px",
         // gap: "1.5rem",
-        // paddingTop: "30px",
+        paddingTop: "30px",
       }}>
-      ;<h1>Contact Me</h1>
+      <h1>Contact Me</h1>
       <p>Feel free to reach out for any inquiries or feedback.</p>
       <form className="contact-form">
         <label htmlFor="name">Name:</label>
