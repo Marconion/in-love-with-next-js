@@ -6,20 +6,17 @@ import logo from "./components/assets/Logo transparent.png";
 import image1 from "@/app/components/assets/images/img1.jpg";
 import image2 from "@/app/components/assets/images/img2.jpg";
 import video from "../../videos/video.mp4";
-import AppStoreBadge from "@/app/components/assets/images/app-store-badge-128x128.png";
-import GoogleStoreBadge from "@/app/components/assets/images/google-icon.svg";
 
 import { Card } from "./components/Card";
 import { Footer } from "./components/Footer";
 
 import { motion } from "framer-motion";
+import { StoreBadges } from "./components/StoreBadges";
+import { CardInfo } from "./components/CardInfo";
 
 export default function Home() {
   return (
     <>
-      <div className="nav">
-        <NavBar />
-      </div>
       <div>
         <Image src={logo} className="logo" alt="In Love logo" />
       </div>
@@ -114,38 +111,11 @@ export default function Home() {
             </p>
 
             {/* SIGN UP */}
-            <div
-              style={{
-                alignItems: "center",
-                textAlign: "center",
-                padding: "2rem",
-                backgroundColor: "#be9f8e",
-                borderRadius: "1rem",
-                margin: "2rem",
-              }}>
-              <p className="read-the-docs" style={{ color: "white" }}>
-                Signup to the platform
-              </p>
-              <h3 style={{ color: "white" }}>Monthly 20$ // Yearly 150$</h3>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                gap: "1rem",
-                paddingBottom: "2rem",
-              }}>
-              <Image
-                src={AppStoreBadge}
-                style={{ width: "150px" }}
-                alt="App Store Badge"
-              />
-              <Image
-                src={GoogleStoreBadge}
-                style={{ width: "150px" }}
-                alt="Google Store Badge"
-              />
-            </div>
+            <CardInfo
+              title={"Signup to the platform"}
+              desc={"Monthly 20$ // Yearly 150$"}
+            />
+            <StoreBadges />
           </div>
         </main>
         <Footer />
