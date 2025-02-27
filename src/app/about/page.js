@@ -25,7 +25,7 @@ const Page = () => {
       <div className="container">
         <h1>About</h1>
         <p>Learn more about me and my mission.</p>
-        <div style={{ marginTop: "3rem" }}>
+        <div style={{ marginTop: "4rem" }}>
           <CardInfo
             title={"What is my vision..."}
             desc={
@@ -56,6 +56,7 @@ const Page = () => {
           </p>
         </div>
       </div>
+      <div style={{}}></div>
       <Footer />
     </>
   );

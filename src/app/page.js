@@ -1,46 +1,36 @@
 import Image from "next/image";
 import "./page.css";
-import { NavBar } from "./components/NavBar";
-import Circle_img from "./components/assets/Circle.png";
+import { Footer } from "./components/Footer";
+import { StoreBadges } from "./components/StoreBadges";
+import { Card } from "./components/Card";
+import { CardInfo } from "./components/CardInfo";
+import FadeInSection from "./components/FadeInSection"; // Import new component
 import logo from "./components/assets/Logo transparent.png";
+import Circle_img from "./components/assets/Circle.png";
 import image1 from "@/app/components/assets/images/img1.jpg";
 import image2 from "@/app/components/assets/images/img2.jpg";
 import video from "../../videos/video.mp4";
-
-import { Card } from "./components/Card";
-import { Footer } from "./components/Footer";
-
-import { motion } from "framer-motion";
-import { StoreBadges } from "./components/StoreBadges";
-import { CardInfo } from "./components/CardInfo";
+import FadeIn from "./components/FadeIn";
+import { Circle } from "./components/Circle";
 
 export default function Home() {
   return (
     <>
-      <div>
-        <Image src={logo} className="logo" alt="In Love logo" />
-      </div>
-      <div>
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <Image
-            style={{
-              zIndex: -10,
-              position: "absolute",
-              left: "-70px",
-              top: "250px",
-              rotate: "270deg",
-              opacity: 0.3,
-            }}
-            // className="dark:invert"
-            src={Circle_img}
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
+      <FadeIn>
+        <div>
+          <Image src={logo} className="logo" alt="In Love logo" />
+        </div>
+      </FadeIn>
+
+      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        {/* Background Circle */}
+        <FadeIn>
+          <Circle />
+        </FadeIn>
+
+        {/* First Section */}
+        <FadeInSection>
           <div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
             style={{
               textAlign: "center",
               marginTop: "2rem",
@@ -54,17 +44,54 @@ export default function Home() {
               reiciendis iure?
             </p>
           </div>
+        </FadeInSection>
+
+        {/* Video Section */}
+        <FadeInSection>
           <div className="video">
             <video
               src={video}
               controls
-              autoFocus
               loop
               muted
               autoPlay
               style={{ width: "100%", maxWidth: "600px" }}
             />
-          </div>{" "}
+          </div>
+        </FadeInSection>
+
+        {/* Text Section */}
+        <FadeInSection>
+          <Image
+            style={{
+              zIndex: -10,
+              position: "absolute",
+              left: "-70px",
+              bottom: "50px",
+              rotate: "45deg",
+              opacity: 0.3,
+            }}
+            src={Circle_img}
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          />
+          {/* <Image
+            style={{
+              zIndex: -10,
+              position: "absolute",
+              right: "-70px",
+              bottom: "0px",
+              rotate: "225deg",
+              opacity: 0.3,
+            }}
+            src={Circle_img}
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          /> */}
           <div
             style={{
               textAlign: "center",
@@ -78,24 +105,30 @@ export default function Home() {
               reiciendis iure?
             </p>
           </div>
+        </FadeInSection>
+
+        {/* Retreat Card */}
+        <FadeInSection>
           <Card
             img={image1}
-            title={`Our next retreat`}
-            content={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi
-        vitae`}
+            title="Our next retreat"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi vitae"
             buttonLink="/pages/About"
           />
+        </FadeInSection>
+
+        {/* Meditation Card */}
+        <FadeInSection>
           <Card
             img={image2}
-            title={`Online Cosmo Meditation`}
-            content={`Based on donations. I will guide you through a meditation and it will be in russian language`}
+            title="Online Cosmo Meditation"
+            content="Based on donations. I will guide you through a meditation and it will be in Russian language"
           />
-          <div
-            style={{
-              backgroundColor: "rgb(66, 66, 66)",
-              paddingTop: "2rem",
-              paddingBottom: "2rem",
-            }}>
+        </FadeInSection>
+
+        {/* Dark Section */}
+        <FadeInSection>
+          <div style={{ backgroundColor: "rgb(66, 66, 66)", padding: "2rem" }}>
             <p className="read-the-docs" style={{ color: "white" }}>
               Join me on a journey
             </p>
@@ -104,23 +137,61 @@ export default function Home() {
               sustainable results.
             </p>
           </div>
+        </FadeInSection>
+
+        {/* Sign Up Section */}
+        <FadeInSection>
           <div>
+            <Image
+              style={{
+                zIndex: -10,
+                position: "absolute",
+                left: "-70px",
+                bottom: "250px",
+                rotate: "180deg",
+                opacity: 0.3,
+              }}
+              src={Circle_img}
+              alt="Next.js logo"
+              width={180}
+              height={38}
+              priority
+            />
+            {/* <div>
+              <Image
+                style={{
+                  zIndex: -10,
+                  position: "absolute",
+                  right: "-70px",
+                  bottom: "200px",
+                  rotate: "135deg",
+                  opacity: 0.3,
+                }}
+                src={Circle_img}
+                alt="Next.js logo"
+                width={180}
+                height={38}
+                priority
+              />
+            </div> */}
             <p className="desc" style={{ color: "black", padding: "2rem" }}>
-              Whether you have 5 or 45 minutes to dedicate that day there is
-              something for everyone to practise anywhere and anytime.
+              Whether you have 5 or 45 minutes to dedicate that day, there is
+              something for everyone to practice anywhere and anytime.
             </p>
 
             {/* SIGN UP */}
-            <CardInfo
-              title={"Signup to the platform"}
-              desc={"Monthly 20$ // Yearly 150$"}
-            />
-            <StoreBadges />
-            <div style={{ marginTop: "30px" }}></div>
+            <FadeInSection>
+              <CardInfo
+                title="Signup to the platform"
+                desc="Monthly $20 // Yearly $150"
+              />
+              <StoreBadges />
+            </FadeInSection>
           </div>
-        </main>
-        <Footer />
-      </div>
+        </FadeInSection>
+      </main>
+
+      <Footer />
     </>
   );
 }
