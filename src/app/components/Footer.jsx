@@ -5,8 +5,8 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="row">
-        <p>© 2025 "In Love With" ... All rights reserved.</p>
-        {/* <p>All rights reserved.</p> */}
+        <p>© 2025 "In Love With"</p>
+        <p>All rights reserved.</p>
       </div>
 
       <p>Follow us on social media!</p>

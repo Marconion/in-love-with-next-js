@@ -9,7 +9,7 @@ export const CardInfo = ({ title, desc }) => {
         padding: "2rem",
         backgroundColor: "#be9f8e",
         borderRadius: "1rem",
-        margin: "2rem",
+        margin: "0.5rem",
       }}>
       <p className="read-the-docs" style={{ color: "white" }}>
         {title}

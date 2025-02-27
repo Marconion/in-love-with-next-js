@@ -1,15 +1,25 @@
 import React from "react";
 import "./page.css";
 import { CustomButton } from "../components/CustomButton";
+import { Footer } from "../components/Footer";
 
 const Page = () => {
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  //   function handleSubmit(event) {
+  //     event.preventDefault();
+  //   }
 
   return (
-    <div className="container">
-      <h1>Contact Us</h1>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        height: "100vh",
+        padding: "0 40px",
+        // gap: "1.5rem",
+        // paddingTop: "30px",
+      }}>
+      ;<h1>Contact Me</h1>
       <p>Feel free to reach out for any inquiries or feedback.</p>
       <form className="contact-form">
         <label htmlFor="name">Name:</label>
@@ -24,6 +34,7 @@ const Page = () => {
         {/* <button type="submit">Send</button> */}
         <CustomButton type={"submit"} label="Send" />
       </form>
+      <Footer />
     </div>
   );
 };

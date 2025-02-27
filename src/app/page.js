@@ -116,6 +116,7 @@ export default function Home() {
               desc={"Monthly 20$ // Yearly 150$"}
             />
             <StoreBadges />
+            <div style={{ marginTop: "130px" }}></div>
           </div>
         </main>
         <Footer />
