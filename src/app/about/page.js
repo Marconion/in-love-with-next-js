@@ -25,9 +25,9 @@ const Page = () => {
       <div className="container">
         <h1>About</h1>
         <p>Learn more about me and my mission.</p>
-        <div style={{ marginTop: "4rem" }}>
+        <div style={{ marginTop: "3rem" }}>
           <CardInfo
-            title={"What is my vision..."}
+            title={"My vision..."}
             desc={
               <section>
                 <ul
@@ -56,7 +56,7 @@ const Page = () => {
           </p>
         </div>
       </div>
-      <div style={{}}></div>
+      <div style={{ margin: "20px 0 30px" }}></div>
       <Footer />
     </>
   );
