@@ -13,7 +13,7 @@ export const Card = ({ img, title, content, buttonLink }) => {
     <div className="card">
       <Image src={img} alt="Card" className="card-image" />
       <h2>{title}</h2>
-      <p>{content}</p>
+      <p className="card-content">{content}</p>
 
       <CustomButton label="Read More" onClick={handleButtonClick} />
     </div>
