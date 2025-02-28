@@ -4,6 +4,7 @@ import { CardInfo } from "../components/CardInfo";
 import { Footer } from "../components/Footer";
 import Image from "next/image";
 import img1 from "@/app/components/assets/images/img1.jpg";
+import Circle_img from "@/app/components/assets/Circle.png";
 
 import FadeInSection from "../components/FadeInSection";
 import FadeIn from "../components/FadeIn";
@@ -64,6 +65,21 @@ const Page = () => {
               Quaerat repudiandae reiciendis nihil, voluptate minima quibusdam.
             </p>
           </div>
+          <Image
+            style={{
+              zIndex: -10,
+              position: "absolute",
+              left: "-70px",
+              bottom: "50px",
+              rotate: "45deg",
+              opacity: 0.3,
+            }}
+            src={Circle_img}
+            alt="Next.js logo"
+            width={180}
+            height={38}
+            priority
+          />
         </FadeInSection>
       </div>
       <div style={{ margin: "20px 0 30px" }}></div>
