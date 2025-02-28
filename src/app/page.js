@@ -114,7 +114,7 @@ export default function Home() {
             img={image1}
             title="Our next retreat"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi vitae"
-            buttonLink="/pages/About"
+            buttonLink="/about"
           />
         </FadeInSection>
 
@@ -124,6 +124,7 @@ export default function Home() {
             img={image2}
             title="Online Cosmo Meditation"
             content="Based on donations. I will guide you through a meditation and it will be in Russian language"
+            buttonLink={"/cosmo"}
           />
         </FadeInSection>
 
