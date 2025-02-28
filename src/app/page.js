@@ -4,14 +4,15 @@ import { Footer } from "./components/Footer";
 import { StoreBadges } from "./components/StoreBadges";
 import { Card } from "./components/Card";
 import { CardInfo } from "./components/CardInfo";
-import FadeInSection from "./components/FadeInSection"; // Import new component
 import logo from "./components/assets/Logo transparent.png";
 import Circle_img from "./components/assets/Circle.png";
 import image1 from "@/app/components/assets/images/img1.jpg";
 import image2 from "@/app/components/assets/images/img2.jpg";
 import video from "../../videos/video.mp4";
-import FadeIn from "./components/FadeIn";
 import { Circle } from "./components/Circle";
+
+import FadeInSection from "./components/FadeInSection";
+import FadeIn from "./components/FadeIn";
 
 export default function Home() {
   return (

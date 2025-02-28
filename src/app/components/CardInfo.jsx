@@ -11,16 +11,13 @@ export const CardInfo = ({ title, desc }) => {
         borderRadius: "1rem",
         margin: "0.5rem",
       }}>
-      <h3
-        className="read-the-docs w-44"
-        style={{ color: "white", textShadow: "1px 2px 2px black" }}>
+      <h3 className="text-center w-50 text-2xl" style={{ color: "white" }}>
         {title}
       </h3>
       <p
         style={{
           color: "white",
           paddingTop: "1rem",
-          textShadow: "1px 2px 2px black",
         }}>
         {desc}
       </p>

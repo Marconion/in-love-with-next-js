@@ -16,9 +16,8 @@ const Page = () => {
           flexDirection: "column",
           alignItems: "center",
           height: "100vh",
-          padding: "0 40px",
+          padding: "0 20px",
           // gap: "1.5rem",
-          paddingTop: "30px",
         }}>
         <h1>Contact Me</h1>
         <p>Feel free to reach out for any inquiries or feedback.</p>
