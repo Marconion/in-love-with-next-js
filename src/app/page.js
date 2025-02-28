@@ -114,7 +114,7 @@ export default function Home() {
             img={image1}
             title="Our next retreat"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi vitae"
-            buttonLink="/about"
+            buttonLink="/next_retreat"
           />
         </FadeInSection>
 
@@ -130,10 +130,10 @@ export default function Home() {
 
         {/* Dark Section */}
         <FadeInSection>
-          <div style={{ backgroundColor: "rgb(66, 66, 66)", padding: "2rem" }}>
-            <p className="read-the-docs" style={{ color: "white" }}>
-              Join me on a journey
-            </p>
+          <div
+            className="text-center"
+            style={{ backgroundColor: "rgb(66, 66, 66)", padding: "2rem" }}>
+            <p style={{ color: "white" }}>Join me on a journey</p>
             <p className="desc" style={{ color: "rgb(192, 192, 192)" }}>
               Yoga By Yuliya creates transformative, long lasting and
               sustainable results.
@@ -176,7 +176,9 @@ export default function Home() {
                 priority
               />
             </div> */}
-            <p className="desc" style={{ color: "black", padding: "2rem" }}>
+            <p
+              className="desc text-center"
+              style={{ color: "black", padding: "2rem" }}>
               Whether you have 5 or 45 minutes to dedicate that day, there is
               something for everyone to practice anywhere and anytime.
             </p>
