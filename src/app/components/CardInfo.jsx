@@ -6,7 +6,7 @@ export const CardInfo = ({ title, desc }) => {
       style={{
         alignItems: "center",
         textAlign: "center",
-        padding: "2rem",
+        padding: "2rem 4rem",
         backgroundColor: "#be9f8e",
         borderRadius: "1rem",
         margin: "0.5rem",
@@ -14,13 +14,13 @@ export const CardInfo = ({ title, desc }) => {
       <h3 className="text-center w-50 text-2xl" style={{ color: "white" }}>
         {title}
       </h3>
-      <p
+      <div
         style={{
           color: "white",
           paddingTop: "1rem",
         }}>
         {desc}
-      </p>
+      </div>
     </div>
   );
 };

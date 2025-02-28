@@ -23,7 +23,12 @@ export const Footer = () => {
           justifyContent: "center",
           paddingTop: "1rem",
         }}>
-        <IoLogoInstagram />
+        <a
+          href="https://www.instagram.com/yuliyavorobyova?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noreferrer">
+          <IoLogoInstagram />
+        </a>
         <FaTelegramPlane />
         <FaFacebookSquare />
         <FaTiktok />

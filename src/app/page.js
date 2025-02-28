@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./page.css";
+// import "./page.css";
 import { Footer } from "./components/Footer";
 import { StoreBadges } from "./components/StoreBadges";
 import { Card } from "./components/Card";
