@@ -54,7 +54,7 @@ export default function Home() {
           <div className="w-full">
             <Video
               width="100%"
-              height="240"
+              // height="240"
               autoPlay
               controls={false}
               muted
