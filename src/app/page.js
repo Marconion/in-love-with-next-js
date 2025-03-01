@@ -8,8 +8,10 @@ import logo from "./components/assets/Logo transparent.png";
 import Circle_img from "./components/assets/Circle.png";
 import image1 from "@/app/components/assets/images/img1.jpg";
 import image2 from "@/app/components/assets/images/img2.jpg";
-import video from "../../videos/video.mp4";
+// import video from "@/app/components/assets/images/video.mp4";
 import { Circle } from "./components/Circle";
+import Video from "next-video";
+import video from "/videos/video.mp4";
 
 import FadeInSection from "./components/FadeInSection";
 import FadeIn from "./components/FadeIn";
@@ -23,7 +25,7 @@ export default function Home() {
         </div>
       </FadeIn>
 
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-6 row-start-2 sm:items-start">
         {/* Background Circle */}
         <FadeIn>
           <Circle />
@@ -49,14 +51,16 @@ export default function Home() {
 
         {/* Video Section */}
         <FadeInSection>
-          <div className="video">
-            <video
-              src={video}
-              controls
-              loop
-              muted
+          <div className="w-full">
+            <Video
+              width="100%"
+              height="240"
               autoPlay
-              style={{ width: "100%", maxWidth: "600px" }}
+              controls={false}
+              muted
+              loop
+              preload="auto"
+              src={video}
             />
           </div>
         </FadeInSection>
