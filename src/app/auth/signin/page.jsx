@@ -25,6 +25,7 @@ const SignIn = () => {
             opacity: 0.3,
             width: "100%",
             height: "auto",
+            overflow: "hidden",
           }}
         />
       </FadeIn>
@@ -49,7 +50,7 @@ const SignIn = () => {
           <CustomButton type={"submit"} label="Sign In" />
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
