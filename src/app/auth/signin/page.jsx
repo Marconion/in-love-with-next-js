@@ -50,7 +50,7 @@ const SignIn = () => {
           <CustomButton type={"submit"} label="Sign In" />
         </form>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
