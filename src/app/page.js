@@ -193,7 +193,9 @@ export default function Home() {
                 title="Signup to the platform"
                 desc="Monthly $20 // Yearly $150"
               />
-              <StoreBadges />
+              <div className="mt-6">
+                <StoreBadges />
+              </div>
             </FadeInSection>
           </div>
         </FadeInSection>

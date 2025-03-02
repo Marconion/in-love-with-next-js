@@ -1,5 +1,5 @@
 import React from "react";
-import "../about/page.css";
+import "./page.css";
 import { CustomButton } from "../components/CustomButton";
 import { Footer } from "../components/Footer";
 
@@ -15,12 +15,15 @@ const Page = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          height: "100vh",
-          padding: "0 20px",
-          // gap: "1.5rem",
+          // justifyContent: "center",
+          padding: "0 40px",
+          // paddingTop: "30px",
+          paddingBottom: "50px",
         }}>
         <h1>Contact Me</h1>
-        <p>Feel free to reach out for any inquiries or feedback.</p>
+        <p className="par">
+          Feel free to reach out for any inquiries or feedback.
+        </p>
         <form className="contact-form">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -31,7 +34,6 @@ const Page = () => {
           <label htmlFor="message">Message:</label>
           <textarea id="message" name="message" required></textarea>
 
-          {/* <button type="submit">Send</button> */}
           <CustomButton type={"submit"} label="Send" />
         </form>
       </div>

@@ -14,7 +14,7 @@ import FadeIn from "../components/FadeIn";
 
 const NextRetreat = () => {
   return (
-    <>
+    <div>
       <FadeIn>
         <Image
           src={img1}
@@ -37,9 +37,7 @@ const NextRetreat = () => {
           Our next <br /> retreat
         </h1>
         <p>Here you will learn about our upcoming events.</p>
-        <div style={{ marginTop: "-1rem" }}>
-          <FadeInSection></FadeInSection>
-        </div>
+        <div style={{ marginTop: "-1rem" }}></div>
         <FadeInSection>
           <div style={{ padding: "2rem" }}>
             <p>
@@ -54,7 +52,7 @@ const NextRetreat = () => {
               zIndex: -10,
               position: "absolute",
               left: "-70px",
-              bottom: "50px",
+              bottom: "30px",
               rotate: "45deg",
               opacity: 0.3,
             }}
@@ -68,17 +66,84 @@ const NextRetreat = () => {
       </div>
       <div style={{ margin: "20px 0 30px" }}>
         <FadeInSection>
-          <div className="m-4 align-middle flex justify-center">
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              height: "700px",
+              overflow: "hidden",
+            }}>
             <Image
               src={retreat1}
+              // layout="fill"
+              objectFit="cover"
               alt="Retreat 1"
-              className="rounded-lg shadow-lg"
+              style={{
+                position: "absolute",
+                right: 0,
+                top: 0,
+                right: "-40%", // Pomera sliku ulevo da bi se videla samo desna polovina
+              }}
+            />
+            <Image
+              src={retreat2}
+              // layout="fill"
+              objectFit="cover"
+              alt="Retreat 2"
+              style={{
+                position: "absolute",
+                // right: 0,
+                top: "25%",
+                left: "-65%", // Pomera sliku ulevo da bi se videla samo desna polovina
+              }}
+            />
+            <Image
+              src={retreat3}
+              // layout="fill"
+              objectFit="cover"
+              alt="Retreat 3"
+              style={{
+                position: "absolute",
+                // right: 0,
+                top: "50%",
+                right: "-45%", // Pomera sliku ulevo da bi se videla samo desna polovina
+              }}
+            />
+            <Image
+              style={{
+                zIndex: -10,
+                position: "absolute",
+                right: "-70px",
+                bottom: "350px",
+                rotate: "120deg",
+                opacity: 0.3,
+              }}
+              src={Circle_img}
+              alt="Next.js logo"
+              width={180}
+              height={38}
+              priority
+            />
+            <Image
+              style={{
+                zIndex: -10,
+                position: "absolute",
+                left: "-70px",
+                bottom: "50px",
+                rotate: "120deg",
+                opacity: 0.3,
+              }}
+              src={Circle_img}
+              alt="Next.js logo"
+              width={180}
+              height={38}
+              priority
             />
           </div>
         </FadeInSection>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
