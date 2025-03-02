@@ -7,6 +7,8 @@ import signinImage from "../../../../public/signin.png";
 
 import FadeIn from "@/app/components/FadeIn";
 import Image from "next/image";
+import { Circle } from "@/app/components/Circle";
+import Link from "next/link";
 
 const SignIn = () => {
   return (
@@ -48,7 +50,26 @@ const SignIn = () => {
           <input type="password" id="password" name="password" required />
 
           <CustomButton type={"submit"} label="Sign In" />
+          <div className="text-center">
+            <p className="mb-2">You don't have an account?</p>
+            <Link
+              style={{
+                color: "#be9f8e", // be9f8e f3ded1
+                backgroundColor: "white",
+                fontWeight: 400,
+                zIndex: 5,
+                padding: "5px 10px",
+                borderRadius: "5px",
+                border: "2px solid #be9f8e",
+              }}
+              href="/auth/signup">
+              Sign Up
+            </Link>
+          </div>
         </form>
+        <FadeIn>
+          <Circle left={"150px"} top={"650px"} rotation={"0deg"} />
+        </FadeIn>
       </div>
       {/* <Footer /> */}
     </div>

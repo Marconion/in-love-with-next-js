@@ -2,6 +2,9 @@ import React from "react";
 import "./page.css";
 import { CustomButton } from "../components/CustomButton";
 import { Footer } from "../components/Footer";
+import FadeIn from "../components/FadeIn";
+import Image from "next/image";
+import signinImage from "../../../public/signin.png";
 
 const Page = () => {
   //   function handleSubmit(event) {
@@ -10,6 +13,24 @@ const Page = () => {
 
   return (
     <>
+      <FadeIn>
+        <Image
+          src={signinImage}
+          alt="Sign In"
+          // width={250}
+          // height={250}
+          style={{
+            position: "absolute",
+            // top: "4rem",
+            right: 0,
+            zIndex: -1,
+            opacity: 0.3,
+            width: "100%",
+            height: "auto",
+            overflow: "hidden",
+          }}
+        />
+      </FadeIn>
       <div
         style={{
           display: "flex",

@@ -2,15 +2,15 @@ import Image from "next/image";
 import React from "react";
 import Circle_img from "../components/assets/Circle.png";
 
-export const Circle = () => {
+export const Circle = ({ left, top, rotation }) => {
   return (
     <Image
       style={{
         zIndex: -10,
         position: "absolute",
-        left: "-70px",
-        top: "250px",
-        rotate: "270deg",
+        left: left || "-70px",
+        top: top || "250px",
+        rotate: rotation || "270deg",
         opacity: 0.3,
       }}
       src={Circle_img}

@@ -18,6 +18,9 @@ export const NavBar = () => {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
+          <li>
+            <Link href="/auth/signin">Sign</Link>
+          </li>
         </ul>
       </nav>
     </div>
