@@ -3,7 +3,7 @@ import React from "react";
 import "./page.css";
 import { CustomButton } from "@/app/components/CustomButton";
 import { Footer } from "@/app/components/Footer";
-import signin_img from "@/app/components/assets/images/signin.png";
+import sign_img from "../../../app/components/assets/images/signin.png";
 import FadeIn from "@/app/components/FadeIn";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ const SignIn = () => {
     <div className="container">
       <FadeIn>
         <Image
-          src={signin_img}
+          src={sign_img}
           alt="Sign In"
           width={250}
           height={250}
