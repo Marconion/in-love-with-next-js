@@ -3,7 +3,7 @@ import React from "react";
 import "./page.css";
 import { CustomButton } from "@/app/components/CustomButton";
 import { Footer } from "@/app/components/Footer";
-import signin from "@/app/components/assets/images/SignIn.png";
+import signin from "@/app/components/assets/images/signin.png";
 import FadeIn from "@/app/components/FadeIn";
 import Image from "next/image";
 
