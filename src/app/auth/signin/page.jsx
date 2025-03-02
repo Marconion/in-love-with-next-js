@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const SignIn = () => {
   return (
-    <div className="container">
+    <div className="container w-full h-full">
       <FadeIn>
         <Image
           src={signinImage}
@@ -34,7 +34,7 @@ const SignIn = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          padding: "0 40px",
+          padding: "30px 40px 0",
         }}>
         <h1>Sign In</h1>
         <p className="par">
@@ -50,7 +50,7 @@ const SignIn = () => {
           <CustomButton type={"submit"} label="Sign In" />
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
