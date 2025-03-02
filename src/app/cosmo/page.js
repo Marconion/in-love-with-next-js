@@ -11,6 +11,7 @@ import TransparentBlock from "../components/TransparentBlock";
 import WhiteBlock from "../components/WhiteBlock";
 import { Circle } from "../components/Circle";
 import { CustomButton } from "../components/CustomButton";
+import Link from "next/link";
 
 const Cosmo = () => {
   return (
@@ -175,7 +176,9 @@ const Cosmo = () => {
                   upcoming sessions!
                 </p>
                 <div className="mt-4">
-                  <CustomButton label={"Sign Up"} />
+                  <Link href="/auth/signup">
+                    <CustomButton label={"Sign Up"} />
+                  </Link>
                 </div>
               </TransparentBlock>
             </FadeInSection>

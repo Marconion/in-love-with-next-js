@@ -11,6 +11,7 @@ import Circle_img from "@/app/components/assets/Circle.png";
 
 import FadeInSection from "../components/FadeInSection";
 import FadeIn from "../components/FadeIn";
+import { CustomButton } from "../components/CustomButton";
 
 const NextRetreat = () => {
   return (
@@ -82,7 +83,8 @@ const NextRetreat = () => {
                 position: "absolute",
                 right: 0,
                 top: 0,
-                right: "-40%", // Pomera sliku ulevo da bi se videla samo desna polovina
+                right: "-40%",
+                borderRadius: "50px",
               }}
             />
             <Image
@@ -94,7 +96,8 @@ const NextRetreat = () => {
                 position: "absolute",
                 // right: 0,
                 top: "25%",
-                left: "-65%", // Pomera sliku ulevo da bi se videla samo desna polovina
+                left: "-65%",
+                borderRadius: "50px",
               }}
             />
             <Image
@@ -106,7 +109,8 @@ const NextRetreat = () => {
                 position: "absolute",
                 // right: 0,
                 top: "50%",
-                right: "-45%", // Pomera sliku ulevo da bi se videla samo desna polovina
+                right: "-45%",
+                borderRadius: "50px",
               }}
             />
             <Image
@@ -139,6 +143,12 @@ const NextRetreat = () => {
               height={38}
               priority
             />
+          </div>
+        </FadeInSection>
+        <FadeInSection>
+          <p className="mb-6">Join us on our next adventure</p>
+          <div className="flex flex-col justify-center align-middle mx-24">
+            <CustomButton type={"submit"} label="Register" />
           </div>
         </FadeInSection>
       </div>
