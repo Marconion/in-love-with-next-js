@@ -1,14 +1,23 @@
 import React from "react";
 
-const WhiteBlock = ({ children }) => {
+const WhiteBlock = ({
+  children,
+  borderSize,
+  borderRadius,
+  color,
+  bg_color,
+  borderHor,
+}) => {
   return (
     <div
       style={{
-        backgroundColor: "#fff",
-        color: "black",
+        backgroundColor: bg_color || "#fff",
+        color: color || "black",
         padding: "0.5rem",
-        borderRadius: "10px",
-        // margin: "1rem 1rem",
+        borderRadius: borderRadius || "0px", // Use the borderRadius prop
+        border: borderSize ? `${borderSize}px solid white` : "none", // Re-enable the border prop
+        borderTop: borderHor ? `${borderSize}px solid white` : "none",
+        borderBottom: borderHor ? `${borderSize}px solid white` : "none",
       }}>
       {children}
     </div>

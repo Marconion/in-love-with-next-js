@@ -9,6 +9,8 @@ import MochaBack from "../components/MochaBack";
 import GreyBack from "../components/GreyBack";
 import TransparentBlock from "../components/TransparentBlock";
 import WhiteBlock from "../components/WhiteBlock";
+import { Circle } from "../components/Circle";
+import { CustomButton } from "../components/CustomButton";
 
 const Cosmo = () => {
   return (
@@ -46,7 +48,14 @@ const Cosmo = () => {
             <FadeInSection>
               <MochaBack>
                 <div className="pt-4 pb-2">
-                  <h2>Cosmoenergetics</h2>
+                  <WhiteBlock
+                    borderSize={2}
+                    borderRadius={10}
+                    color={"#fff"}
+                    bg_color={"transparent"}
+                    borderHor={true}>
+                    <h2>Cosmoenergetics</h2>
+                  </WhiteBlock>
                   <h3 className="pb-6 pt-6">How Cosmoenergetics Works</h3>
                   <ol type="1" className="text-left">
                     <li>
@@ -120,9 +129,16 @@ const Cosmo = () => {
             <FadeInSection>
               <MochaBack>
                 <div className="py-2">
-                  <h2 className="text-2xl pb-4">Upcoming Sessions</h2>
-                  <ul className="grid grid-cols-1 gap-4">
-                    <WhiteBlock>
+                  <WhiteBlock
+                    borderSize={2}
+                    borderRadius={10}
+                    color={"#fff"}
+                    bg_color={"transparent"}
+                    borderHor={true}>
+                    <h2 className="text-2xl">Upcoming Sessions</h2>
+                  </WhiteBlock>
+                  <ul className="grid grid-cols-1 gap-4 mt-6">
+                    <WhiteBlock borderRadius={10}>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 1:{" "}
@@ -130,7 +146,7 @@ const Cosmo = () => {
                         <p>Introduction to Cosmo</p>
                       </li>
                     </WhiteBlock>
-                    <WhiteBlock>
+                    <WhiteBlock borderRadius={10}>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 2:{" "}
@@ -138,7 +154,7 @@ const Cosmo = () => {
                         <p>Advanced Techniques</p>
                       </li>
                     </WhiteBlock>
-                    <WhiteBlock>
+                    <WhiteBlock borderRadius={10}>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 3:{" "}
@@ -158,6 +174,9 @@ const Cosmo = () => {
                   world of Cosmo. Sign up for our newsletter for updates on
                   upcoming sessions!
                 </p>
+                <div className="mt-4">
+                  <CustomButton label={"Sign Up"} />
+                </div>
               </TransparentBlock>
             </FadeInSection>
           </div>
