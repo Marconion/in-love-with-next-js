@@ -15,8 +15,8 @@ const SignIn = () => {
         <Image
           src={signinImage}
           alt="Sign In"
-          width={250}
-          height={250}
+          // width={250}
+          // height={250}
           style={{
             position: "absolute",
             // top: "4rem",
