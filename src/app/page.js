@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./page.css";
+// import "./page.css";
 import { Footer } from "./components/Footer";
 import { StoreBadges } from "./components/StoreBadges";
 import { Card } from "./components/Card";
@@ -20,7 +20,10 @@ export default function Home() {
   return (
     <>
       <FadeIn>
-        <div>
+        <div
+          style={{
+            background: "linear-gradient(to bottom, #be9f8e, #ffffff)",
+          }}>
           <Image src={logo} className="logo" alt="In Love logo" />
         </div>
       </FadeIn>
