@@ -71,7 +71,7 @@ const SignIn = () => {
           <Circle left={"150px"} top={"650px"} rotation={"0deg"} />
         </FadeIn>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
