@@ -160,7 +160,7 @@ const Cosmo = () => {
                         <p className="text-md underline underline-offset-4">
                           Session 3:{" "}
                         </p>
-                        <p>Q&A with Experts</p>
+                        <p>Q&A with me - Ask and I will gladly answer to you</p>
                       </li>
                     </WhiteBlock>
                   </ul>

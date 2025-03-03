@@ -40,8 +40,8 @@ body {
   width: 100%;
   will-change: filter;
   transition: filter 300ms;
-  background-color: #be9f8e;
-  box-shadow: #be9f8e 0 0 1em;
+  background: linear-gradient(to bottom, #be9f8e, #ffffff);
+  /* box-shadow: #be9f8e 0 0 1em; */
 }
 
 .read-the-docs {

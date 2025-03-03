@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import "./page.css";
+import "./page.css";
 import { Footer } from "./components/Footer";
 import { StoreBadges } from "./components/StoreBadges";
 import { Card } from "./components/Card";
@@ -28,7 +28,7 @@ export default function Home() {
       <main className="flex flex-col gap-6 row-start-2 sm:items-start">
         {/* Background Circle */}
         <FadeIn>
-          <Circle />
+          <Circle top={"350px"} />
         </FadeIn>
 
         {/* First Section */}
