@@ -24,7 +24,6 @@ const NextRetreat = () => {
           height={250}
           style={{
             position: "absolute",
-            // top: "4rem",
             zIndex: -1,
             opacity: 0.3,
             width: "100%",
@@ -73,11 +72,11 @@ const NextRetreat = () => {
               width: "100%",
               height: "700px",
               overflow: "hidden",
+              objectFit: "cover",
             }}>
             <Image
+              key="retreat1"
               src={retreat1}
-              // layout="fill"
-              objectFit="cover"
               alt="Retreat 1"
               style={{
                 position: "absolute",
@@ -85,35 +84,34 @@ const NextRetreat = () => {
                 top: 0,
                 right: "-40%",
                 borderRadius: "50px",
+                objectFit: "cover",
               }}
             />
             <Image
+              key="retreat2"
               src={retreat2}
-              // layout="fill"
-              objectFit="cover"
               alt="Retreat 2"
               style={{
                 position: "absolute",
-                // right: 0,
                 top: "25%",
                 left: "-65%",
                 borderRadius: "50px",
+                objectFit: "cover",
               }}
             />
             <Image
+              key="retreat3"
               src={retreat3}
-              // layout="fill"
-              objectFit="cover"
               alt="Retreat 3"
               style={{
                 position: "absolute",
-                // right: 0,
                 top: "50%",
                 right: "-45%",
                 borderRadius: "50px",
               }}
             />
             <Image
+              key="circle1"
               style={{
                 zIndex: -10,
                 position: "absolute",
@@ -129,6 +127,7 @@ const NextRetreat = () => {
               priority
             />
             <Image
+              key="circle2"
               style={{
                 zIndex: -10,
                 position: "absolute",
@@ -157,4 +156,4 @@ const NextRetreat = () => {
   );
 };
 
-export default NextRetreat; // Ensure this is the default export
+export default NextRetreat;
