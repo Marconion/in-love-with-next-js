@@ -32,7 +32,7 @@ const Page = () => {
       <div className="container">
         <h1>About</h1>
         <p>Learn more about me and my mission.</p>
-        <div style={{ marginTop: "3rem" }}>
+        <div className="mt-14">
           <FadeInSection>
             <CardInfo
               title={"My vision..."}
