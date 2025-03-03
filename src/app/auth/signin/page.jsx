@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const SignIn = () => {
   return (
-    <div className="container w-full h-full">
+    <div className="container w-full h-full" style={{ overflow: "hidden" }}>
       <FadeIn>
         <Image
           src={signinImage}
@@ -28,6 +28,7 @@ const SignIn = () => {
             width: "100%",
             height: "auto",
             overflow: "hidden",
+            maxWidth: "100vw",
           }}
         />
       </FadeIn>
@@ -37,6 +38,8 @@ const SignIn = () => {
           flexDirection: "column",
           alignItems: "center",
           padding: "30px 40px 0",
+          margin: "0 auto", // Center the container
+          maxWidth: "100%", // Ensure the container does not exceed the viewport width
         }}>
         <h1>Sign In</h1>
         <p className="par">
