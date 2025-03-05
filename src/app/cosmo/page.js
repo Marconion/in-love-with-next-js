@@ -24,6 +24,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { CustomButton2 } from "../components/CustomButton2";
 
 const Cosmo = () => {
   return (
@@ -190,7 +191,10 @@ const Cosmo = () => {
                 <div className="mt-4">
                   <AlertDialog>
                     <AlertDialogTrigger asChild>
-                      <CustomButton label={"Sign Up"} />
+                      <CustomButton2
+                        label={"Sign Up"}
+                        buttonLink={"/auth/signup"}
+                      />
                     </AlertDialogTrigger>
                     <AlertDialogContent>
                       <AlertDialogHeader>

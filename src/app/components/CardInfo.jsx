@@ -1,13 +1,13 @@
 import React from "react";
 
-export const CardInfo = ({ title, desc }) => {
+export const CardInfo = ({ title, desc, children, bg_color }) => {
   return (
     <div
       style={{
         alignItems: "center",
         textAlign: "center",
         padding: "2rem 4rem",
-        backgroundColor: "#be9f8e",
+        backgroundColor: bg_color || "#be9f8e",
         borderRadius: "1rem",
         margin: "0.5rem",
       }}>
@@ -21,6 +21,7 @@ export const CardInfo = ({ title, desc }) => {
         }}>
         {desc}
       </div>
+      {children}
     </div>
   );
 };

@@ -15,6 +15,8 @@ import video from "/videos/video.mp4";
 
 import FadeInSection from "./components/FadeInSection";
 import FadeIn from "./components/FadeIn";
+import { CustomButton } from "./components/CustomButton";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -194,8 +196,16 @@ export default function Home() {
             <FadeInSection>
               <CardInfo
                 title="Signup to the platform"
-                desc="Monthly $20 // Yearly $150"
-              />
+                desc="Monthly $20 // Yearly $150">
+                <div className="pt-4">
+                  <CustomButton
+                    label={"Sign Up"}
+                    buttonLink={"/auth/signup"}
+                    bg_color={"white"}
+                    labelColor={"#be9f8e"}
+                  />
+                </div>
+              </CardInfo>
               <div className="mt-6">
                 <StoreBadges />
               </div>
