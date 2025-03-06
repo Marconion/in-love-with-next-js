@@ -37,7 +37,6 @@ const Cosmo = () => {
           height={250}
           style={{
             position: "absolute",
-            // top: "4rem",
             zIndex: -1,
             opacity: 0.3,
             width: "100%",

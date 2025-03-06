@@ -30,18 +30,18 @@ ul {
   color: #f3ded1;
 } */
 
-li {
+nav li {
   cursor: pointer;
   transition: color 0.3s;
   padding: 5px;
   font-size: 13px;
 }
 
-li:hover {
+nav ul li:hover {
   position: relative;
 }
 
-li:hover::after {
+nav ul li:hover::after {
   content: "";
   position: absolute;
   width: 100%;
