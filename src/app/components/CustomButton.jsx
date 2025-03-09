@@ -17,7 +17,7 @@ export const CustomButton = ({
   return (
     <button
       type={type}
-      className="custom-button"
+      className="custom-button z-10"
       onClick={handleButtonClick}
       style={{
         backgroundColor: bg_color || "#be9f8e",

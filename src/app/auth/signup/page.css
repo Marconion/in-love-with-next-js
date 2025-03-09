@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* padding-top: 30px; */
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: 2.8em;
+  /* padding-top: 30px; */
+}
+
+.par {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: auto;
+}
+
+form input {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+}
+
+form textarea {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  max-lines: 5;
+  resize: vertical;
+  min-height: 100px;
+}

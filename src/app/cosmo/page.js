@@ -151,7 +151,7 @@ const Cosmo = () => {
                     <h2 className="text-2xl">Upcoming Sessions</h2>
                   </WhiteBlock>
                   <ul className="grid grid-cols-1 gap-4 mt-6">
-                    <WhiteBlock borderRadius={10}>
+                    <WhiteBlock borderRadius={10} boxShadow>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 1:{" "}
@@ -159,7 +159,7 @@ const Cosmo = () => {
                         <p>Introduction to Cosmo</p>
                       </li>
                     </WhiteBlock>
-                    <WhiteBlock borderRadius={10}>
+                    <WhiteBlock borderRadius={10} boxShadow>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 2:{" "}
@@ -167,7 +167,7 @@ const Cosmo = () => {
                         <p>Advanced Techniques</p>
                       </li>
                     </WhiteBlock>
-                    <WhiteBlock borderRadius={10}>
+                    <WhiteBlock borderRadius={10} boxShadow>
                       <li>
                         <p className="text-md underline underline-offset-4">
                           Session 3:{" "}
