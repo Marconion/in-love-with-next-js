@@ -46,7 +46,7 @@ const SignIn = () => {
           <p className="par">
             Feel free to reach out for any inquiries or feedback.
           </p>
-          <form className="contact-form">
+          <form className="contact-form z-10">
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" required />
 
@@ -76,7 +76,6 @@ const SignIn = () => {
           </FadeIn>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

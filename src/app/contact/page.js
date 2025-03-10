@@ -45,7 +45,7 @@ const Page = () => {
         <p className="par">
           Feel free to reach out for any inquiries or feedback.
         </p>
-        <form className="contact-form">
+        <form className="contact-form z-10">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -58,7 +58,6 @@ const Page = () => {
           <CustomButton type={"submit"} label="Send" />
         </form>
       </div>
-      <Footer />
     </>
   );
 };

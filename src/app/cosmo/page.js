@@ -53,7 +53,7 @@ const Cosmo = () => {
         <div>
           <div className="description">
             <FadeInSection>
-              <p className="pb-10 px-6">
+              <p className="py-10 px-6">
                 This page is dedicated to exploring the world of Cosmo, its
                 benefits, and how you can participate in upcoming sessions.
               </p>
@@ -218,7 +218,6 @@ const Cosmo = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

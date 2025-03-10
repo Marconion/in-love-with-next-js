@@ -13,16 +13,13 @@ import Link from "next/link";
 const SignUp = () => {
   return (
     <div>
-      <div className="container w-full mb-10">
+      <div className="content w-full mb-10">
         <FadeIn>
           <Image
             src={signinImage}
             alt="Sign In"
-            // width={250}
-            // height={250}
             style={{
               position: "absolute",
-              // top: "4rem",
               right: 0,
               zIndex: -1,
               opacity: 0.3,
@@ -48,7 +45,7 @@ const SignUp = () => {
             Sign up to access exclusive content and features that are only
             available to registered users.
           </p>
-          <form className="contact-form">
+          <form className="contact-form z-10">
             <label htmlFor="Name">Name</label>
             <input type="text" id="name" name="name" required />
             <label htmlFor="email">Email:</label>
@@ -88,7 +85,6 @@ const SignUp = () => {
           </FadeIn>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

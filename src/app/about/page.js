@@ -18,14 +18,15 @@ const Page = () => {
           alt="About"
           width={250}
           height={250}
-          style={{
-            position: "absolute",
-            // top: "4rem",
-            zIndex: -1,
-            opacity: 0.3,
-            width: "100%",
-            height: "auto",
-          }}
+          // style={{
+          //   position: "absolute",
+          //   // top: "4rem",
+          //   zIndex: -1,
+          //   opacity: 0.3,
+          //   width: "100%",
+          //   height: "auto",
+          // }}
+          className="absolute z-[-1] opacity-30 w-full lg:w-[50%] left-1/2 transform -translate-x-1/2"
         />
       </FadeIn>
 
@@ -83,7 +84,6 @@ const Page = () => {
         </FadeInSection>
       </div>
       <div style={{ margin: "20px 0 30px" }}></div>
-      <Footer />
     </>
   );
 };

@@ -104,7 +104,7 @@ const NextRetreat = () => {
 
         <FadeInSection>
           <div>
-            <h1 className="pb-6 text-center">In Love With... Portugal</h1>
+            <h1 className="pb-6 text-center mt-12">In Love With... Portugal</h1>
           </div>
           <div style={{ padding: "1rem 0rem 0rem", textAlign: "center" }}>
             <div className="mb-8">
@@ -236,7 +236,6 @@ const NextRetreat = () => {
           </div>
         </FadeInSection>
       </div>
-      <Footer />
     </div>
   );
 };

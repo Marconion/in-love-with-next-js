@@ -23,6 +23,7 @@ export default function Home() {
     <>
       <FadeIn>
         <div
+          className="flex justify-center lg:w-[100%] lg:mx-auto"
           style={{
             background: "linear-gradient(to bottom, #be9f8e, #ffffff)",
           }}>
@@ -30,7 +31,7 @@ export default function Home() {
         </div>
       </FadeIn>
 
-      <main className="flex flex-col gap-6 row-start-2 sm:items-start">
+      <main className="flex flex-col justify-center gap-6 lg:w-[50%] lg:mx-auto">
         {/* Background Circle */}
         <FadeIn>
           <Circle top={"350px"} />
@@ -118,24 +119,26 @@ export default function Home() {
         </FadeInSection>
 
         {/* Retreat Card */}
-        <FadeInSection>
-          <Card
-            img={image1}
-            title="Our next retreat"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi vitae"
-            buttonLink="/next_retreat"
-          />
-        </FadeInSection>
+        <div>
+          <FadeInSection>
+            <Card
+              img={image1}
+              title="Our next retreat"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, animi vitae"
+              buttonLink="/next_retreat"
+            />
+          </FadeInSection>
 
-        {/* Meditation Card */}
-        <FadeInSection>
-          <Card
-            img={image2}
-            title="Online Cosmo Meditation"
-            content="Based on donations. I will guide you through a meditation and it will be in Russian language"
-            buttonLink={"/cosmo"}
-          />
-        </FadeInSection>
+          {/* Meditation Card */}
+          <FadeInSection>
+            <Card
+              img={image2}
+              title="Online Cosmo Meditation"
+              content="Based on donations. I will guide you through a meditation and it will be in Russian language"
+              buttonLink={"/cosmo"}
+            />
+          </FadeInSection>
+        </div>
 
         {/* Dark Section */}
         <FadeInSection>
@@ -213,8 +216,6 @@ export default function Home() {
           </div>
         </FadeInSection>
       </main>
-
-      <Footer />
     </>
   );
 }
