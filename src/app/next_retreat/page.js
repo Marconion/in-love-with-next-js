@@ -19,7 +19,7 @@ import FadeInSection from "../components/FadeInSection";
 import FadeIn from "../components/FadeIn";
 import { CustomButton } from "../components/CustomButton";
 import Video from "next-video";
-import video from "/videos/Portugal.mp4";
+// import video from "/videos/Portugal.mp4";
 
 import {
   Carousel,
