@@ -18,6 +18,8 @@ import Time from "@/app/components/assets/images/Time.png";
 import FadeInSection from "../components/FadeInSection";
 import FadeIn from "../components/FadeIn";
 import { CustomButton } from "../components/CustomButton";
+import Video from "next-video";
+import video from "/videos/Portugal.mp4";
 
 import {
   Carousel,
@@ -106,6 +108,25 @@ const NextRetreat = () => {
           <div>
             <h1 className="pb-6 text-center mt-12">In Love With... Portugal</h1>
           </div>
+          {/* Video Section */}
+          <FadeInSection key={"video-section"}>
+            <div className="w-full">
+              <Video
+                width="100%"
+                // height="240"
+                autoPlay
+                controls={false}
+                muted
+                loop
+                preload="auto"
+                poster="https://image.mux.com/4baiQRbOFUll4mjeBcfMEGSecwyASDoNTjIpDRFZ201Q/thumbnail.webp"
+                src={
+                  "https://stream.mux.com/4baiQRbOFUll4mjeBcfMEGSecwyASDoNTjIpDRFZ201Q.m3u8"
+                }
+                type="application/x-mpegURL"
+              />
+            </div>
+          </FadeInSection>
           <div style={{ padding: "1rem 0rem 0rem", textAlign: "center" }}>
             <div className="mb-8">
               <MochaBack>A 7-Day Yoga & Energy Practice Retreat</MochaBack>

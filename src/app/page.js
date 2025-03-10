@@ -38,7 +38,7 @@ export default function Home() {
         </FadeIn>
 
         {/* First Section */}
-        <FadeInSection>
+        <FadeInSection key={"first-section"}>
           <div
             style={{
               textAlign: "center",
@@ -56,7 +56,7 @@ export default function Home() {
         </FadeInSection>
 
         {/* Video Section */}
-        <FadeInSection>
+        <FadeInSection key={"video-section"}>
           <div className="w-full">
             <Video
               width="100%"
@@ -72,7 +72,7 @@ export default function Home() {
         </FadeInSection>
 
         {/* Text Section */}
-        <FadeInSection>
+        <FadeInSection key={"text-section"}>
           <Image
             style={{
               zIndex: -10,
@@ -88,21 +88,7 @@ export default function Home() {
             height={38}
             priority
           />
-          {/* <Image
-            style={{
-              zIndex: -10,
-              position: "absolute",
-              right: "-70px",
-              bottom: "0px",
-              rotate: "225deg",
-              opacity: 0.3,
-            }}
-            src={Circle_img}
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          /> */}
+
           <div
             style={{
               textAlign: "center",
@@ -110,7 +96,7 @@ export default function Home() {
               marginBottom: "2rem",
             }}>
             <p className="read-the-docs">Join me on a journey</p>
-            <p className="desc">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               animi vitae! Eligendi non optio repellendus ad exercitationem, ab
               reiciendis iure?
@@ -120,7 +106,7 @@ export default function Home() {
 
         {/* Retreat Card */}
         <div>
-          <FadeInSection>
+          <FadeInSection key={"retreat-card"}>
             <Card
               img={image1}
               title="Our next retreat"
@@ -130,7 +116,7 @@ export default function Home() {
           </FadeInSection>
 
           {/* Meditation Card */}
-          <FadeInSection>
+          <FadeInSection key={"meditation-card"}>
             <Card
               img={image2}
               title="Online Cosmo Meditation"
@@ -141,12 +127,12 @@ export default function Home() {
         </div>
 
         {/* Dark Section */}
-        <FadeInSection>
+        <FadeInSection key={"dark-section"}>
           <div
             className="text-center"
             style={{ backgroundColor: "rgb(66, 66, 66)", padding: "2rem" }}>
             <p style={{ color: "white" }}>Join me on a journey</p>
-            <p className="desc" style={{ color: "rgb(192, 192, 192)" }}>
+            <p style={{ color: "rgb(192, 192, 192)" }}>
               Yoga By Yuliya creates transformative, long lasting and
               sustainable results.
             </p>
@@ -154,7 +140,7 @@ export default function Home() {
         </FadeInSection>
 
         {/* Sign Up Section */}
-        <FadeInSection>
+        <FadeInSection key={"sign-up-section"}>
           <div>
             <Image
               style={{
@@ -196,7 +182,7 @@ export default function Home() {
             </p>
 
             {/* SIGN UP */}
-            <FadeInSection>
+            <FadeInSection key={"sign-up-section"}>
               <CardInfo
                 title="Signup to the platform"
                 desc="Monthly $20 // Yearly $150">

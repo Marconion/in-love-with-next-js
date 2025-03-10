@@ -1,0 +1,23 @@
+{
+  "status": "ready",
+  "originalFilePath": "videos\\portugal.mp4",
+  "provider": "mux",
+  "providerMetadata": {
+    "mux": {
+      "uploadId": "k5yRHoO202E8G101nBR2Wl6YT00srDy1jd00e2Um4Pt6Zxs",
+      "assetId": "fNE00pvZqnNm6jxFj7nUZAAxgHqRyudKKtKlx2RKt02qA",
+      "playbackId": "4baiQRbOFUll4mjeBcfMEGSecwyASDoNTjIpDRFZ201Q"
+    }
+  },
+  "createdAt": 1741611781483,
+  "updatedAt": 1741612373025,
+  "size": 1408284,
+  "sources": [
+    {
+      "src": "https://stream.mux.com/4baiQRbOFUll4mjeBcfMEGSecwyASDoNTjIpDRFZ201Q.m3u8",
+      "type": "application/x-mpegURL"
+    }
+  ],
+  "poster": "https://image.mux.com/4baiQRbOFUll4mjeBcfMEGSecwyASDoNTjIpDRFZ201Q/thumbnail.webp",
+  "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwAgCdASoQAAkAAQAcJZACdDiAN4PBqciqVhtoAP74qcek0Kq9UDFfYMj946orx1h5vh2peNPcSBE7/NH+L43D+0tzLu0U5RX/6Fz8n/DXwNfpQOC/f8MZ3yD9kuuwn+asUlNsY4TcQXB/zKx/dHqA4BimgVbMIveEulwoXT7JGZU62XyLX9+72YHQuGewtaA3wHkAAAA="
+}
